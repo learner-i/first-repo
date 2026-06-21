@@ -127,10 +127,10 @@ None),
 """优质医疗资源的地理分布不均是全球性问题。AI辅助诊断系统可以部署在基层医疗机构，使边远地区患者无需长途就医即可获得接近三甲医院水平的初步诊断。腾讯觅影、阿里健康等国内AI医疗平台已将部分功能延伸至县域医院，为基层医生提供AI辅助诊断支持，在一定程度上缓解了"看病难"问题。"""),
 
 ("3. 推动慢性病管理与疾病预防",
-"""疾病风险预测模型可以整合患者的电子病历、实验室检验指标、生活方式数据与可穿戴设备数据，提前识别高风险人群。心脑血管疾病、糖尿病、癌症等慢性病的早期预警，能够促使患者及时干预、改变生活方式，从而显著降低疾病进展风险。美国Epic系统内嵌的败血症早期预警模型，已在ICU场景中显著提前了危重症的识别时间。"""),
+"""疾病风险预测模型可以整合患者的电子病历、实验室检验指标、生活方式数据与可穿戴设备数据，提前识别高风险人群。心脑血管疾病、糖尿病、癌症等慢性病的早期预警，能够促使患者及时干预、改变生活方式，从而显著降低疾病进展风险。多家医院已尝试将AI早期预警模型嵌入电子病历系统，以更早识别败血症等危重症，缩短干预响应时间。"""),
 
 ("4. 辅助临床决策，减少医疗差错",
-"""临床决策支持系统（CDSS）能够在医生开具处方时，实时提示药物相互作用、禁忌症及剂量异常，减少由疲劳、信息不足或认知偏差导致的医疗差错。研究显示，AI辅助的放射科报告系统可将漏诊率降低约20%（McKinney et al., Nature, 2020）。"""),
+"""临床决策支持系统（CDSS）能够在医生开具处方时，实时提示药物相互作用、禁忌症及剂量异常，减少由疲劳、信息不足或认知偏差导致的医疗差错。McKinney et al.（Nature, 2020）的研究显示，AI辅助的乳腺癌筛查系统在英国数据集上可将假阴性率降低约9.4%，并减少单阅片场景下约2.7%的假阳性率。"""),
 
 ("5. 加速新药研发",
 """AI技术在药物靶点发现、分子结构预测（如DeepMind AlphaFold2）以及临床试验患者招募等方面展现出巨大潜力，显著缩短了从基础研究到临床应用的周期，有望降低新药研发成本，最终使患者获益。"""),
@@ -139,7 +139,7 @@ None),
 None),
 
 ("1. 算法歧视与医疗不公平",
-"""训练数据的偏差是医疗AI最严重的系统性风险之一。2019年，Obermeyer等研究者在《科学》发表研究，揭示Optum公司一款广泛使用的医疗风险分层算法存在严重种族偏见：该算法以"历史医疗花费"作为健康需求的代理变量，而由于历史上黑人患者获得医疗服务的机会较少，其花费往往低于同等健康状况的白人患者，导致算法系统性地低估了黑人患者的医疗需求，使黑人患者被推荐接受额外健康管理项目的比例下降约50%。"""),
+"""训练数据的偏差是医疗AI最严重的系统性风险之一。2019年，Obermeyer等研究者在《科学》发表研究，揭示Optum公司一款广泛使用的医疗风险分层算法存在严重种族偏见：该算法以"历史医疗花费"作为健康需求的代理变量，而由于历史上黑人患者获得医疗服务的机会较少，其花费往往低于同等健康状况的白人患者，导致算法系统性地低估了黑人患者的医疗需求，导致本应获得额外健康管理的黑人患者中，实际被系统识别并推荐的比例仅为17.7%，而非消除偏见后应有的46.5%，被少识别了约62%。"""),
 
 ("2. 患者隐私泄露与数据安全风险",
 """医疗AI系统需要大规模收集和处理患者的敏感个人健康数据。2017年，英国NHS皇家自由医院在未获得患者充分知情同意的情况下，将约160万患者的个人健康数据提供给DeepMind开发Streams急性肾损伤预警应用。英国ICO认定该数据共享行为违反了《数据保护法》，此案成为医疗AI数据隐私争议的标志性案例。"""),
@@ -172,7 +172,7 @@ None),
 """适度宽松的政策环境有助于吸引资本和人才投入医疗AI领域，促进算法性能的持续提升与应用场景的快速拓展。COVID-19疫情期间，多家AI公司迅速开发出基于胸部CT的新冠肺炎辅助诊断系统，在核酸检测能力有限的早期阶段辅助了大量疑似病例的快速分诊，展示了AI快速响应的潜力。开放的数据政策（如允许医疗机构在脱敏条件下共享数据用于科研）有助于构建更大规模、更具代表性的训练数据集，从根本上缓解数据偏见问题。"""),
 
 ("2. 可能带来的问题",
-"""缺乏足够验证的AI系统一旦进入临床应用，可能产生严重后果。IBM Watson for Oncology的肿瘤治疗建议被发现与医学专家意见存在重大分歧，部分建议被指出"不安全"（Strickland, IEEE Spectrum, 2019）。过于宽松的数据共享政策可能使商业利益凌驾于患者隐私保护之上，竞争驱动的"数据竞赛"也可能加剧大型科技公司对医疗数据的垄断。
+"""缺乏足够验证的AI系统一旦进入临床应用，可能产生严重后果。IBM Watson for Oncology的肿瘤治疗建议被发现与医学专家意见存在重大分歧，部分建议被指出"不安全"（Ross & Swetlitz, STAT News, 2017；Strickland, IEEE Spectrum, 2019）。过于宽松的数据共享政策可能使商业利益凌驾于患者隐私保护之上，竞争驱动的"数据竞赛"也可能加剧大型科技公司对医疗数据的垄断。
 
 因此，理想的政策框架应当是"有边界的开放"：在保障核心安全底线与数据权益的前提下，为技术创新预留足够空间，并建立适应技术发展的动态监管机制。"""),
 
@@ -200,7 +200,7 @@ None),
 ("1. 工程师的职业伦理困境",
 """IT专业人员不仅承担技术实现的职责，更是社会资源分配与价值判断的实际参与者。在医疗AI开发中，工程师面临效率与公平的深层张力：若以"最大化整体预测准确率"为优化目标，模型在多数群体上表现优异，但可能系统性地牺牲少数群体的预测精度——从纯粹技术指标角度看是"最优"的，从社会公平角度看则是有偏见的。
 
-工程师还面临商业压力与伦理责任之间的冲突：当雇主要求加快产品上市节奏，而工程师认为模型尚未经过足够验证时，是否有责任发声？ACM《软件工程师职业道德规范》（2018）原则1.01明确指出：工程师有责任将公众健康与安全置于雇主和客户利益之上。在医疗AI领域，这意味着工程师不能以"只是工具实现者"为由规避对算法社会影响的责任追究。"""),
+工程师还面临商业压力与伦理责任之间的冲突：当雇主要求加快产品上市节奏，而工程师认为模型尚未经过足够验证时，是否有责任发声？ACM《职业道德与专业行为规范》（2018）明确要求计算机专业人员将公众健康与安全置于首位，在存在利益冲突时优先保护社会与公众福祉。在医疗AI领域，这意味着工程师不能以"只是工具实现者"为由规避对算法社会影响的责任追究。"""),
 
 ("2. 伦理判断力作为专业成熟度的核心",
 """成熟的技术专业人员不仅能够构建高性能模型，还能够识别模型可能造成的非预期后果，并在技术设计阶段就将伦理考量嵌入决策流程。这要求工程师具备跨学科素养，能够与伦理学家、医学专家、患者代表及政策制定者进行有效协作，形成"价值敏感设计"（value-sensitive design）的实践范式。从"工具实现者"到"社会资源分配的设计者"的角色转变，是IT行业职业成熟度提升的核心标志。"""),
@@ -244,7 +244,7 @@ None),
 None),
 
 ("案例一：IBM Watson for Oncology——技术宣传与临床现实的落差",
-"""IBM Watson for Oncology被作为"认知计算革命医疗"的旗舰案例在全球多个国家推广，宣称能为肿瘤科医生提供基于循证医学的个性化治疗建议。然而，STAT News的调查报道（Strickland, 2019）与多家合作医院（包括印度Manipal医院）的内部评估显示，Watson的治疗建议与医学专家共识存在严重分歧，部分建议被临床医生认定为不安全。深入调查发现，Watson的训练主要依赖来自纪念斯隆-凯特琳癌症中心的有限病例，缺乏对不同人群、不同医疗体系的充分覆盖，导致在全球化推广中出现严重的泛化失败。
+"""IBM Watson for Oncology被作为"认知计算革命医疗"的旗舰案例在全球多个国家推广，宣称能为肿瘤科医生提供基于循证医学的个性化治疗建议。然而，STAT News的深度调查（Ross & Swetlitz, 2017）以及IEEE Spectrum的报道（Strickland, 2019）与多家合作医院（包括印度Manipal医院）的内部评估显示，Watson的治疗建议与医学专家共识存在严重分歧，部分建议被临床医生认定为不安全。深入调查发现，Watson的训练主要依赖来自纪念斯隆-凯特琳癌症中心的有限病例，缺乏对不同人群、不同医疗体系的充分覆盖，导致在全球化推广中出现严重的泛化失败。
 
 这一案例深刻揭示了医疗AI商业化过程中的伦理风险：过度营销与不充分验证的结合，使尚未成熟的技术进入临床，不仅可能给患者带来实际伤害，还严重损害了公众对医疗AI整体的信任。这说明，监管机构对医疗AI临床有效性的独立验证要求，以及行业自律对夸大宣传的约束，是不可缺少的伦理守护机制。"""),
 
@@ -254,7 +254,7 @@ None),
 这一案例说明：在医疗AI数据收集与使用过程中，目的限制原则（purpose limitation）与知情同意（informed consent）不是可以为了技术进步而妥协的形式程序，而是保护患者基本权益、维护社会对医疗数字化转型信任的实质性伦理基础。无论技术成果多么有益，绕过患者知情权的数据收集行为都构成对患者自主权的侵犯，平台方、医疗机构和监管机构各有不可推卸的责任。"""),
 
 ("案例三：COVID-19中的AI辅助CT诊断——应急响应的伦理张力",
-"""2020年新冠疫情暴发初期，多家中国AI公司（如阿里巴巴、科大讯飞等）迅速开发出基于CT影像的新冠肺炎辅助诊断系统，在核酸检测能力有限的早期阶段辅助了大批疑似病例的快速分诊，展示了AI快速响应的潜力。然而，这些系统大多在缺乏充分临床验证的条件下被快速部署，其泛化性能尚不明确。事后独立评估研究发现，部分系统在外部验证集上的性能显著低于开发者自报指标（Roberts et al., Nature Machine Intelligence, 2021）。
+"""2020年新冠疫情暴发初期，多家中国AI公司（如阿里巴巴达摩院、推想科技等）迅速开发出基于CT影像的新冠肺炎辅助诊断系统，在核酸检测能力有限的早期阶段辅助了大批疑似病例的快速分诊，展示了AI快速响应的潜力。然而，这些系统大多在缺乏充分临床验证的条件下被快速部署，其泛化性能尚不明确。事后独立评估研究发现，部分系统在外部验证集上的性能显著低于开发者自报指标（Roberts et al., Nature Machine Intelligence, 2021）。
 
 这一案例揭示了应急情境下技术创新与临床安全之间的深层张力：在极端公共卫生危机中，适度放宽准入门槛可能是合理的权宜之计，但不应成为长期降低验证标准的先例。应急部署后的全面评估与知识总结，应当被视为配套义务，以避免形成"紧急状态规范化"的不良先例。"""),
 
@@ -266,12 +266,13 @@ None),
 [2] Obermeyer, Z., et al. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. Science, 366(6464), 447–453.
 [3] McKinney, S.M., et al. (2020). International evaluation of an AI system for breast cancer screening. Nature, 577, 89–94.
 [4] Adamson, A.S., & Smith, A. (2018). Machine Learning and Health Care Disparities in Dermatology. JAMA Dermatology, 154(11), 1247–1248.
-[5] Strickland, E. (2019). How IBM Watson Overpromised and Underdelivered on AI Health Care. IEEE Spectrum.
-[6] UK Information Commissioner's Office (ICO). (2017). Royal Free – Google DeepMind trial failed to comply with data protection law.
-[7] Roberts, M., et al. (2021). Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans. Nature Machine Intelligence, 3, 199–217.
-[8] European Parliament. (2024). EU Artificial Intelligence Act.
-[9] U.S. FDA. (2021). Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SaMD) Action Plan.
-[10] ACM. (2018). Software Engineering Code of Ethics and Professional Practice."""),
+[5] Ross, C., & Swetlitz, I. (2017). IBM pitched its Watson supercomputer as a revolution in cancer care. It's nowhere close. STAT News.
+[6] Strickland, E. (2019). How IBM Watson Overpromised and Underdelivered on AI Health Care. IEEE Spectrum.
+[7] UK Information Commissioner's Office (ICO). (2017). Royal Free – Google DeepMind trial failed to comply with data protection law.
+[8] Roberts, M., et al. (2021). Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans. Nature Machine Intelligence, 3, 199–217.
+[9] European Parliament. (2024). EU Artificial Intelligence Act.
+[10] U.S. FDA. (2021). Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SaMD) Action Plan.
+[11] ACM. (2018). Code of Ethics and Professional Conduct."""),
 ]
 
 
