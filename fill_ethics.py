@@ -130,7 +130,7 @@ None),
 """疾病风险预测模型可以整合患者的电子病历、实验室检验指标、生活方式数据与可穿戴设备数据，提前识别高风险人群。心脑血管疾病、糖尿病、癌症等慢性病的早期预警，能够促使患者及时干预、改变生活方式，从而显著降低疾病进展风险。多家医院已尝试将AI早期预警模型嵌入电子病历系统，以更早识别败血症等危重症，缩短干预响应时间。"""),
 
 ("4. 辅助临床决策，减少医疗差错",
-"""临床决策支持系统（CDSS）能够在医生开具处方时，实时提示药物相互作用、禁忌症及剂量异常，减少由疲劳、信息不足或认知偏差导致的医疗差错。McKinney et al.（Nature, 2020）的研究显示，AI辅助的乳腺癌筛查系统在英国数据集上可将假阴性率降低约9.4%，并减少单阅片场景下约2.7%的假阳性率。"""),
+"""临床决策支持系统（CDSS）能够在医生开具处方时，实时提示药物相互作用、禁忌症及剂量异常，减少由疲劳、信息不足或认知偏差导致的医疗差错。McKinney et al.（Nature, 2020）的研究显示，AI辅助的乳腺癌筛查系统在美国数据集上（对标单阅片）可将假阴性率降低约9.4%、假阳性率降低约5.7%。"""),
 
 ("5. 加速新药研发",
 """AI技术在药物靶点发现、分子结构预测（如DeepMind AlphaFold2）以及临床试验患者招募等方面展现出巨大潜力，显著缩短了从基础研究到临床应用的周期，有望降低新药研发成本，最终使患者获益。"""),
@@ -187,7 +187,7 @@ None),
 
 第一，训练数据的历史偏差。若训练数据反映了历史上医疗资源分配的不公平现实，模型将习得并固化这种偏差。Obermeyer等（2019）的研究揭示，以"历史医疗花费"作为健康需求代理变量，会将社会不平等"编码"进算法逻辑之中。
 
-第二，代表性不足（underrepresentation）。大多数医学影像AI模型主要基于来自发达国家和特定人群的数据进行训练，在应用于不同肤色、体型或疾病表现模式的人群时，性能可能显著下降。Adamson & Smith（2018）在《JAMA Dermatology》的研究表明，某些皮肤病AI诊断系统在深色皮肤患者中的准确率明显低于浅色皮肤患者。
+第二，代表性不足（underrepresentation）。大多数医学影像AI模型主要基于来自发达国家和特定人群的数据进行训练，在应用于不同肤色、体型或疾病表现模式的人群时，性能可能显著下降。Adamson & Smith（2018）在《JAMA Dermatology》发表的述评指出，现有皮肤病AI模型的训练数据以浅色皮肤图像为主，存在对深色皮肤患者诊断准确率下降的风险；后续实证研究（Daneshjou et al., Science Advances, 2022）也证实了这一担忧。
 
 第三，代理变量的选择偏差。选择与健康需求高度相关但内嵌社会偏见的代理变量作为训练标签，会将不平等系统性地引入模型预测。"""),
 
@@ -266,6 +266,7 @@ None),
 [2] Obermeyer, Z., et al. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. Science, 366(6464), 447–453.
 [3] McKinney, S.M., et al. (2020). International evaluation of an AI system for breast cancer screening. Nature, 577, 89–94.
 [4] Adamson, A.S., & Smith, A. (2018). Machine Learning and Health Care Disparities in Dermatology. JAMA Dermatology, 154(11), 1247–1248.
+[4b] Daneshjou, R., et al. (2022). Disparities in dermatology AI performance on a diverse, curated clinical image set. Science Advances, 8(31), eabq6147.
 [5] Ross, C., & Swetlitz, I. (2017). IBM pitched its Watson supercomputer as a revolution in cancer care. It's nowhere close. STAT News.
 [6] Strickland, E. (2019). How IBM Watson Overpromised and Underdelivered on AI Health Care. IEEE Spectrum.
 [7] UK Information Commissioner's Office (ICO). (2017). Royal Free – Google DeepMind trial failed to comply with data protection law.
